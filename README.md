@@ -1,90 +1,82 @@
 # Data Analysis Project -- Indian Start-up Funding Analysis
 
-Ideas, creativity, and execution are essential for a start-up to
-flourish. But are they enough? Investors provide start-ups and other
-entrepreneurial ventures with the capital---popularly known as
-\"funding\"---to think big, grow rich, and leave a lasting impact. In
-this project, you are going to analyse funding received by start-ups in
-India from 2018 to 2021. You will find the data for each year of funding
-in a separate csv file in the dataset provided. In these files you\'ll
-find the start-ups' details, the funding amounts received, and the
-investors\' information.
+1.0 Introduction
+The content article contains an analysis of data collected on Indian start-ups funding from 2018 to 2021.
 
-**Column names and description:**
+The rational behind this exploratoration of the data is unearth in details contaited in the differentfunding opportunies to new businesses and come out with best proposals for young and aspiring enterpreneurs regarding the sectors investors are likely to fund in the Indian start-up ecosystem.
 
--   **Company/Brand**: Name of the company/start-up
+We defined the problem, formulated Hypothesis, asked questions and provided answers to the questions.
 
--   **Founded**: Year start-up was founded
+1.1 Data Handling
+The dataset for each year was loaded from CSV files. New columns were created and column names were changed in the dataset to match that of the other datasets. Irrelevant column was dropped and the four datasets were combined to form a single dataset.
 
--   **Sector**: Sector of service
+The new column names are:Company/Brand, Founded, HeadQuarter, Sector, What it does,Founders,Investor,Amount($) and Stage
 
--   **What it does**: Description about Company
+2.0 Questioning stage
+This stage was dedicated to the main analytical work of the project
 
--   **Founders**: Founders of the Company
+2.1 Hypothses
+Null Hypothesis, H0: There is no relationship between Amount sourced and Industry
 
--   **Investor**: Investors
+Alternative Hypothesis, H1: There is a relationship between Amount sourced and Industry
 
--   **Amount(\$)**: Raised fund
+2.2 Questions to test the hypotheses
+Which Industry received the highest funding?
 
--   **Stage**: Round of funding reached
+Is there a relationship between the Age of Company and Amount of funding sourced?
 
-## Scenario 
+Which investors give the highest funding?
 
-Your team is trying to venture into the Indian start-up ecosystem. As the 
-data expert of the team you are to investigate the ecosystem and propose 
-the best course of action. 
+Is location a factor in sourcing funding?
 
-## Instructions
+Which type of funding is mostly accessed?
 
-Your task is to develop a unique story from this dataset by stating and
-testing a hypothesis, asking questions, perform analysis and share
-insights with appropriate visualisations.
+Which sector attract more investors
 
-So as part of the project you are to:
+3.0 Feature processing
+Here is the section to clean and process the features of the dataset
 
--   Ask questions
+3.1 Obtaining quality data
+Different libraries including Pandas, Numpy, Seaborn and matplotlib were installed to help us process the data The datasets were loaded, inpected, and called year by year and cleaned. The Indian Rupee was converted to US dollars. Elements that were wrongly placed were moved to their rightful columns.
 
--   Develop hypothesis
+4.0 Answering the questions
+Here visualiztion was done of the data for better insight into the data
 
--   Process the data
+4.1 Which Industry received the highest funding?
+image.png
 
--   Analyse the data
+From the graph, FinTech topped as the Industry that received the highest startup funding
 
--   Visualise the data
+4.2 Is there a relationship between the Age of Company and Amount of funding sourced?
+image.png
 
-Upon completion compile these processes in a blog post and share your
-analysis on Medium, LinkedIn, Dev.to, personal blog or a suitable
-blogging website.
+Companies founded in the year 2015 received more funding followed by 2020. It also decreased in 2021. Search Investor behaviour could be based on the type of industry the startup found themselves but not necesarily their age.
 
-# Rubric
+4.3 Which investors give the highest funding?
+image.png
 
-Data Processing:
+Inflection point ventures is a leading investor in startups in India the graph.
 
--   **Excellent**: Described in detail the data cleaning process and
-    assumptions
+4.4 Is location a factor in sourcing funding?
+image.png
 
--   **Good**: Gave a summary of the data cleaning process
+It is very obvious that the location of a startup in India places a vital role in the amount a startup receives and the number of investors willing to fund in the startup. Investors prefer to fund startups in Bangalore followed by Mumbai.
 
--   **Fair**: Gave a bullet list of data cleaning process with short
-    sentences
+4.5 Which type of funding is mostly accessed?
+image.png
 
-Hypothesis & Questions:
+Startups most often accessed seed funds followed by Series A funds as shown by the graph
 
--   **Excellent**: Stated a hypothesis and asked at least 5 questions
+4.6 Which sector attract more investors
+image.png
 
--   **Good**: Stated a hypothesis and asked up to 4 questions
+Investors are mostly attracted to funding the FinTech industry which is the financial sector whiles EdTech which is the educational sector follow second.
 
--   **Fair**: No hypothesis and asked up to 3 questions
+5.0 Conclusion and Recommendation
+The final part talks about the over findings and recommends for future decision making
 
-Analysis & Visualisation:
+5.1 Conclusion
+Judging by our findings we, accept the Alternative Hypothesis. FinTech received the highest sourced amount followed by EdTech
 
--   **Excellent**: Validated the hypothesis and answered all questions
-    listed earlier with appropriate charts. Used relevant diagrams and
-    charts to show analysis/metrics
-
--   **Good**: Validated the hypothesis and answered some of the
-    questions listed with appropriate charts. Used relevant diagrams but
-    might need some improvement.
-
--   **Fair**: Lack of clarity on whether the hypothesis was true or not.
-    Answered some of the questions listed.
+5.2 Recommendation
+Based on the analysis done on the Indian startup funding, it very pruduent for a startup should consider the FinTech, EdTech and Retail sectors and also should Bangalore, Mumbai and Gurugram and location for their business.
